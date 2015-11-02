@@ -4,34 +4,51 @@
 <meta charset="UTF-8">
 <title>Learning CSS</title>
 <style type="text/css">
-    div {
-        width: 100px;
-        height: 100px;
-        float: left;
-        margin: 20px;
+    p {
+        font-family: Arial, Helvetica, sans-serif ;
     }
-    #blue {
-        background-color: blue;
-        border: 5px black inset;
+    .bold {
+        font-weight: bold;
+        color: green;
+        font-size: 1.2em;
     }
-    #red {
-        background-color: red;
-        border-style: dashed solid dotted ridge;
-        border-width: 10px 5px 3px 1px;
-        border-color: green yellow blue black;
+    .italic {
+        font-style: italic;
     }
-    #green {
+    .underline {
+        text-decoration: underline;
+    }
+    .greenBox {
+        width: 300px;
+        height: 300px;
         background-color: green;
-        border-radius: 50px;
+        text-align: justify;
     }
+    a:visited {
+        color: green;
+    }
+    a:hover {
+        font-size: 50px;
+    }
+
 
 </style>
 </head>
 <body>
 
-    <div id="blue"></div>
-    <div id="red"></div>
-    <div id="green"></div>
+    <a href="http://www.google.com" target="_blank">Google Homepage</a>
+
+    <a href="http://www.google.es" target="_blank">Google Homepage ES</a>
+
+    <div class="greenBox">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum eveniet maxime nam nemo nihil odit
+        porro possimus repellat rerum! Asperiores dicta eius facere in odit possimus quasi quo voluptate.</p></div>
+    <div>
+    <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum eveniet maxime nam nemo nihil odit
+        porro possimus repellat rerum! Asperiores dicta eius facere in odit possimus quasi quo voluptate.</p></div>
+    <div>
+    <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum eveniet maxime nam nemo nihil odit
+        porro possimus repellat rerum! <span class="underline">Asperiores dicta eius facere in odit possimus quasi quo voluptate</span>.</p></div>
 
 </body>
 </html>
