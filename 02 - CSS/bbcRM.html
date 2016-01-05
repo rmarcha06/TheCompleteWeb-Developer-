@@ -64,6 +64,7 @@
     background-image: url("images/magnify.png");
     background-repeat: no-repeat;
     background-position: right center;
+    border-radius: 5px;
   }
   .break {
     clear: both;
@@ -129,6 +130,36 @@
   }
   .date {
     font-weight: bold;
+  }
+  h1 {
+    color: #1F4F82;
+    font-size: 2.5em;
+  }
+  .headlineimage {
+    float: left;
+  }
+  .newsitem {
+    position: relative;
+    left: 10px;
+    top: -15px;
+    width: 320px;
+    float: left;
+    font-size: 1.1em;
+  }
+  .newsitem a {
+    color: #1F4F82;
+    text-decoration: none;
+  }
+  .newsitem a:hover {
+    text-decoration: underline;
+  }
+  .video {
+    background-image: url("images/bullet.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 35px;
+    margin: 0;
+    line-height: 1.3em;
   }
 </style>
 </head>
@@ -198,6 +229,18 @@
         <div class="fixedwidth">
           <p><span class="date">2 April 2014</span> Last updated at 15:23</p>
           <h1>Pollution to spread across England</h1>
+          <img class="headlineimage" src="images/pollution.jpg" alt="" width="310">
+          <div class="newsitem"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam assumenda consectetur ducimus eligendi error et,  sequi voluptatum.</p>
+            <p class="video "><a href="">Why are pollution levels so high?</a></p>
+            <p class="video"><a href="">Saharan dust visible on cars</a></p>
+            <p class="video"><a href="">How Saharan dust reached the UK</a></p>
+          </div>
+
+          <div id="watchlisten">
+
+
+          </div>
+
         </div>
 
       </div>
